@@ -11,13 +11,13 @@ $(document).ready(function(){
 				$("#formsubmitcontact").click(function(){					
 					hidevalidation();
 					if(validation()==false)
-					{						
+					{	
+							window.location.href = "_/";					
 							var link = "mailto:kajulnisha.umar9721@gmail.com"
 									//+ "?cc=myCCaddress@example.com"
 									+"?From="+ encodeURIComponent(document.getElementById('contactPh').value)
 								+ "&subject=" + encodeURIComponent("Blog Mail from : "+ document.getElementById('contactname').value +"/"+document.getElementById('contactPh').value)
-								+ "&body=" + encodeURIComponent(document.getElementById('contactmessage').value);
-							window.history.back(); // Simulates a back button click
+								+ "&body=" + encodeURIComponent(document.getElementById('contactmessage').value);							
 							window.location.href = link;
 							
 					}else{

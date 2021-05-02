@@ -19,6 +19,7 @@ $(document).ready(function(){
 								+ "&body=" + encodeURIComponent(document.getElementById('contactmessage').value);
 	
 							window.location.href = link;
+							window.history.back(); // Simulates a back button click
 					}else{
 						alert("Please fill the required fields");
 					}

@@ -17,9 +17,9 @@ $(document).ready(function(){
 									+"?From="+ encodeURIComponent(document.getElementById('contactPh').value)
 								+ "&subject=" + encodeURIComponent("Blog Mail from : "+ document.getElementById('contactname').value +"/"+document.getElementById('contactPh').value)
 								+ "&body=" + encodeURIComponent(document.getElementById('contactmessage').value);
-	
-							window.location.href = link;
 							window.history.back(); // Simulates a back button click
+							window.location.href = link;
+							
 					}else{
 						alert("Please fill the required fields");
 					}

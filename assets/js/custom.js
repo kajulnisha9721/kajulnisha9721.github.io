@@ -12,7 +12,7 @@ $(document).ready(function(){
 					hidevalidation();
 					if(validation()==false)
 					{	
-							window.location.href = "_/";					
+							window.location.href = "/";					
 							var link = "mailto:kajulnisha.umar9721@gmail.com"
 									//+ "?cc=myCCaddress@example.com"
 									+"?From="+ encodeURIComponent(document.getElementById('contactPh').value)

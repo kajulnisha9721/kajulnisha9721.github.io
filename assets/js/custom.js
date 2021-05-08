@@ -80,8 +80,9 @@ $(document).ready(function(){
 			// }#myModal
 
 			
-			$(".close").click(function(){  	
-				$('#myModal').css('display','none'); 				
+			$("span.modalclose").click(function(event){
+				event.stopPropagation();  	
+				$('.modal').css('display','none'); 				
 			});
 
 });
